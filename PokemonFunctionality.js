@@ -201,7 +201,9 @@ console.log(statsGen([30,25,0],[45,4,0],[90,255,31],[40,30,20],[100,30,20],[40,1
 
 // EXP LEVEL UP
 function addXP(value){
-
+  //add value to pokemon object xp
+  //check if pokemon hit threshold and levels up
+  //if so level up
 }
 
 function pokemonGen(hi,low,exclusions){
