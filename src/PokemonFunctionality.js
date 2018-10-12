@@ -218,5 +218,8 @@ function pokemonGen(hi,low,exclusions){
   }
 }
 
-
+export {
+  ivGen,
+  
+}
 //console.log(blast[2][0].healthStat)
