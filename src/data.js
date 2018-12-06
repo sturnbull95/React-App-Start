@@ -5379,7 +5379,7 @@ var poke = [
     }
   ]
 ]
-var arr = [{type:"fire",even:["rock","water"],bad:["dragon","fairy","normal","fire"],good:["grass","ice","steel"]},{type:"water"}]
+//var arr = [{type:"fire",even:["rock","water"],bad:["dragon","fairy","normal","fire"],good:["grass","ice","steel"]},{type:"water"}]
 
 // INDEX 0 = NATURE
 // INDEX 1 = INCREASE
@@ -5513,6 +5513,5 @@ var natures = [
 ]
 module.exports = {
   natures: natures,
-  poke: poke,
-  arr:arr
+  poke: poke
 };
