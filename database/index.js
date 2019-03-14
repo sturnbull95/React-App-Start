@@ -1,14 +1,14 @@
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/pokemon');
+var mongoose = require("mongoose");
+mongoose.connect("mongodb://3.93.146.145:32768/pokemon");
 
 var db = mongoose.connection;
 
-db.on('error', function() {
-  console.log('mongoose connection error');
+db.on("error", function() {
+  console.log("mongoose connection error");
 });
 
-db.once('open', function() {
-  console.log('mongoose connected successfully');
+db.once("open", function() {
+  console.log("mongoose connected successfully");
 });
 
 var itemSchema = mongoose.Schema({
@@ -30,13 +30,12 @@ var userSchema = mongoose.Schema({
   username: String,
   party: Array,
   box: Array,
-  caught:Number,
-  bag:Object
+  caught: Number,
+  bag: Object
 });
 
-
-var Pokemon = mongoose.model('Pokemon', itemSchema);
-var User = mongoose.model('User', userSchema);
+var Pokemon = mongoose.model("Pokemon", itemSchema);
+var User = mongoose.model("User", userSchema);
 
 module.exports.Pokemon = Pokemon;
 module.exports.User = User;
